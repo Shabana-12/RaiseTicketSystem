@@ -1,0 +1,22 @@
+<div class="main">
+    {% block title %}<h2>Tickets - All tickets</h2>{% endblock %}
+
+
+
+ 
+    {% for data in dataset %}
+    
+    <h5>ID: {{ data.id }}</h5>            
+    <h5>Service: {{ data.service }}</h5>
+    <h5>Ticket Details: {{ data.details }}</h5>
+    <h5>Status: {{ data.status }}</h5>
+    
+    <h5>Assignee: {{ data.assigned_to }}</h5>
+    <h5>Attachment: {{ data.file }}</h5>
+    <br/>
+    
+    <hr/>
+ 
+    {% endfor %}
+ 
+</div>
